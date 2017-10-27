@@ -11,22 +11,12 @@
 
   <!-- google font - Amatic handwriting font -->
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway" rel="stylesheet">
-
-
-
 </head>
 <body class="container">
-
-
-
-
-    <a class="nav_link" href="/">
-      <h1>First Law-Hub</h1>
-    </a>
-
-    <h2>Bayaz</h3>
-
-
+  <a class="nav_link" href="/">
+    <h1>First Law-Hub</h1>
+  </a>
+  <h2>Bayaz</h3>
   <?php
   foreach (getHeroes() as $hero) {
     echo "<tr>";   
@@ -49,12 +39,6 @@
   }
 
 ?>
-
-  
-
- <!--  <p>In the first law book series Joe Abercrombie writes from shifting perscpectives, giving the reader a chance to see the same situation from entirely different perspectives. By very far the perspective that I related to and enjoyed the most was that of the men of the north. Specifically Logan Ninefingers and his crew. But pretty much any of the north men I found most relatable and honorable, despite being terrible monsters (black dow). </p> -->
-
-
 <?php
 
   function getDb() {
@@ -94,54 +78,31 @@
   }
 
 ?>
+<div style="padding: 10px;"></div>
 
-  
-
-  <div style="padding: 10px;"></div>
-
-  <table class="table">
-<!--     <tr>
-      <td></td>
-      
-      <th class="heading">Quote</th>
-      <th class="heading">Bio</th>
-      
-    </tr> -->
-
-<?php
-
-  foreach (getHeroes() as $hero) {
-
-    echo "<p>" . $hero['image_large'] . "</p>";
-    echo "<p>" . $hero['biography'] . "</p>";
-
-  }
-
-?>
-
-
- <div class="columnl">
-  <h3 >Friends</h3>
+<table class="table">
     <?php
-
-      foreach (getFriends() as $friend) {
-       echo "<ul>" . $friend['link'] . "</ul>";
+      foreach (getHeroes() as $hero) {
+        echo "<p>" . $hero['image_large'] . "</p>";
+        echo "<p>" . $hero['biography'] . "</p>";
       }
     ?>
-  </div>
-
-  <div class="columnr">
-  <h3>Enemies</h3>
-    <?php
-
-    foreach (getEnemies() as $enemy) {
-      echo "<ul>" . $enemy['link'] . "</ul>";
-     
-      }
-    ?>
-  </div>
-
-</table>
-
+    <div class="columnl">
+      <h3 >Friends</h3>
+      <?php
+        foreach (getFriends() as $friend) {
+        echo "<ul>" . $friend['link'] . "</ul>";
+          }
+      ?>
+    </div>
+    <div class="columnr">
+      <h3>Enemies</h3>
+      <?php
+        foreach (getEnemies() as $enemy) {
+        echo "<ul>" . $enemy['link'] . "</ul>";
+          }
+      ?>
+    </div>
+  </table>
 </body>
 </html>
