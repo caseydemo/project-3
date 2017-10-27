@@ -24,4 +24,7 @@ h2, h3, h4{
 }
 .image_large{
 	border-width: 3px;
+	display: block;
+    margin: auto;
+    width: 40%;
 }

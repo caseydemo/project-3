@@ -84,7 +84,7 @@
 
     echo "<tr>";    
     echo "<td>" . $hero['image_url'] . "</td>";
-    echo "<td>" . $hero['name'] . "</td>";
+    echo "<td>" . $hero['link'] . "</td>";
     echo "<td>" . $hero['quote'] . "</td>";
     echo "</tr>\n";
 

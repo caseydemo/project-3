@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Logan Ninefingers</title>
+  <title>Black Dow</title>
 
   <!-- bootstrap 4 css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -24,12 +24,12 @@
       <h1>First Law-Hub</h1>
     </a>
 
-    <h2>Logan Ninefingers - AKA the bloody nine</h3>
+    <h2>Black Dow</h3>
 
 
   <?php
   foreach (getHeroes() as $hero) {
-    echo "<tr>";    
+    echo "<tr>";   
     echo "<td>" . $hero['quote'] . "</td>";
     echo "</tr>\n";
   }
@@ -74,7 +74,7 @@
     $request = pg_query(getDb(), "
         SELECT *
         FROM heroes
-        WHERE name='Logan Ninefingers';
+        WHERE name='Black Dow';
     ");
     return pg_fetch_all($request);
   }
@@ -97,10 +97,10 @@
 <?php
 
   foreach (getHeroes() as $hero) {
-    
+
     echo "<p>" . $hero['image_large'] . "</p>";
     echo "<p>" . $hero['biography'] . "</p>";
-  
+
   }
 
 ?>
