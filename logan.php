@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>First Law Heros</title>
+  <title>Logan Ninefingers</title>
 
   <!-- bootstrap 4 css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -17,13 +17,28 @@
 </head>
 <body class="container">
 
-  <a class="nav_link" href="/">
-    <h1>First Law-Hub</h1>
-  </a>
 
-  <h2>The men of the north</h2>
 
-  <p>In the first law book series Joe Abercrombie writes from shifting perscpectives, giving the reader a chance to see the same situation from entirely different perspectives. By very far the perspective that I related to and enjoyed the most was that of the men of the north. Specifically Logan Ninefingers and his crew. But pretty much any of the north men I found most relatable and honorable, despite being terrible monsters (black dow). </p>
+
+    <a class="nav_link" href="/">
+      <h1>First Law-Hub</h1>
+    </a>
+
+    <h2>Logan Ninefingers - AKA the bloody nine</h3>
+
+
+  <?php
+  foreach (getHeroes() as $hero) {
+    echo "<tr>";    
+    echo "<td>" . $hero['quote'] . "</td>";
+    echo "</tr>\n";
+  }
+
+?>
+
+  
+
+ <!--  <p>In the first law book series Joe Abercrombie writes from shifting perscpectives, giving the reader a chance to see the same situation from entirely different perspectives. By very far the perspective that I related to and enjoyed the most was that of the men of the north. Specifically Logan Ninefingers and his crew. But pretty much any of the north men I found most relatable and honorable, despite being terrible monsters (black dow). </p> -->
 
 
 <?php
@@ -70,12 +85,12 @@
   <div style="padding: 10px;"></div>
 
   <table class="table">
-    <!-- <tr>
+<!--     <tr>
       <td></td>
-      <th class="heading">Name</th>
+      
       <th class="heading">Quote</th>
       <th class="heading">Bio</th>
-      <th class="heading">Pic</th>
+      
     </tr> -->
 
 <?php
@@ -83,9 +98,8 @@
   foreach (getHeroes() as $hero) {
 
     echo "<tr>";    
-    echo "<td>" . $hero['image_url'] . "</td>";
-    echo "<td>" . $hero['name'] . "</td>";
-    echo "<td>" . $hero['quote'] . "</td>";
+    echo "<td>" . $hero['image_large'] . "</td>";
+    echo "<td>" . $hero['biography'] . "</td>";
     echo "</tr>\n";
 
   }

@@ -1,80 +1,8 @@
-# Herobook - Facebook for Superheroes!
-## Project - 3
+# The "heroes" of the first law series
 
-Create a website that helps superheroes stay in touch with their superfriends.
+So in the first law book series the author shifts perspective many times to give an interesting and layered view to the situations they run into. He does a great job of making all the perspecitves seem plausible - I could see the good in even the worst characters. However, I found myself drawn most to the stories about the men of the north. 
 
-## Objectives and requirements
+The men of the north are strong, hardy and gruff who have only known war their entire lives. Honor is valued above power or wealth and they are generally a trust worthy people. But to call them heroes just seems a bit weird. Whatever I like em. So... yeah... these are like their facebook pages. lol selfie!
 
-To complete the assignment, you must:
+I got most of my content from the [First Law Wikia](http://firstlaw.wikia.com/wiki/First_Law_Wiki) and pictures from various other places on the interwebs. 
 
-1. Create a public repo in your personal Github account.
-2. Create PHP and markdown files and add them to your project.
-3. Create a local database (for development).
-3. Push your code to Github.
-4. Deploy your application and database to Heroku.
-
-You may use a CSS framework for styling if you wish. You can use Facebook's styling for inspiration or develop your own look and feel.
-
-## Data
-
-The supplied superheroes.sql file contains create table and insert statements to get you started. You will need to customize the data a little, since image links were not provided. You can make other changes, too, if you wish.
-
-## Application file structure
-
-Minimally:
-
-  index.php - menu page
-  docs/
-    requirements.md
-  README.md
-  Procfile
-  composer.json
-
-Make sure there's something to read in your README file.
-
-It's okay if your project has more files, or if you organize your code with subdirectories, but at the least you need the ones listed above.
-
-## Required Page
-
-Your index.php file should list all the superheroes in your database.
-
-Each superhero listing should contain:
-  * Name
-  * Thumbnail image of their profile picture
-  * About Me (this is a field in the hero table)
-
-## Remember to push to Github!
-
-Your repo should be public so that others can see your code and comment on it.
-
-## Remember to deploy to Heroku!
-
-PHP projects do not need an Express server.
-
-You will need to include a Procfile so Heroku knows how to start your server.
-
-You will also need to add a PostgreSQL database to your Heroku app 
-and duplicate your data there.
-
-## Stretch Goals
-
-If you complete the basic superhero roster, your next step is to make each hero's name a link that opens their profile page.
-
-Profile pages should display:
-  * Name
-  * Large profile image
-  * About Me
-  * Biography
-
-It would be cool if they also displayed:
-  * List of the hero's allies
-  * List of the hero's enemies
-  * List of the hero's abilities
-
-Each ally and enemy name should also be a profile page link.
-
-Profile pages should include a link to return to the roster (index.php).
-
-## If you get stuck...
-
-Ask. :-)
