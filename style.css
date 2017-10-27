@@ -1,7 +1,8 @@
 body{
 	font-family: 'Raleway', sans-serif;
-    /*background-image: url("docs/bg-image.jpg");*/
+    background-image: url("docs/bg-image2.jpg");
     font-size: 20px;
+    font-weight: bolder;
 
     /*background-color: #cccccc;*/
 }
