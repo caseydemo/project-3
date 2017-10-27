@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Project-3</title>
+  <title>First Law Heros</title>
 
   <!-- bootstrap 4 css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
   <!-- local css stylesheet -->
-  <link rel="stylesheet" href="/app/style.css">
+  <link rel="stylesheet" href="/style.css">
 
   <!-- google font - Amatic handwriting font -->
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway" rel="stylesheet">
@@ -17,9 +17,10 @@
 </head>
 <body class="container">
 
-  <h1>Project-3</h1>
+  <h1>The First Law</h1>
+  <h2>The men of the north</h2>
 
-  <p>One a those days, huh. Wal, a wiser fella than m'self once said, sometimes you eat the bar and sometimes the bar, wal, he eats you. That wasn't her toe. Excuse me! Mark it zero. Next frame. Mind if I smoke a jay? Brandt can't watch though. Or he has to pay a hundred. Sex. The physical act of love. Coitus. Do you like it? Shomer shabbos.</p>
+  <p>In the first law book series Joe Abercrombie writes from shifting perscpectives, giving the reader a chance to see the same situation from entirely different perspectives. By very far the perspective that I related to and enjoyed the most was that of the men of the north. Specifically Logan Ninefingers and his crew. But pretty much any of the north men I found most relatable and honorable, despite being terrible monsters (black dow). </p>
 
 
 <?php
@@ -68,10 +69,10 @@
   <table class="table">
     <tr>
       <td></td>
-      <th>Name</th>
-      <th>About Me</th>
-      <th>Bio</th>
-      <th>Pic</th>
+      <th class="heading">Name</th>
+      <th class="heading">Quote</th>
+      <th class="heading">Bio</th>
+      <th class="heading">Pic</th>
     </tr>
 
 <?php
@@ -81,7 +82,7 @@
     echo "<tr>";    
     echo "<td>" . $hero['id'] . "</td>";
     echo "<td>" . $hero['name'] . "</td>";
-    echo "<td>" . $hero['about_me'] . "</td>";
+    echo "<td>" . $hero['quote'] . "</td>";
     echo "<td>" . $hero['biography'] . "</td>";
     echo "<td>" . $hero['image_url'] . "</td>";
     echo "</tr>\n";

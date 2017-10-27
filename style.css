@@ -1,0 +1,21 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+h1{
+	font-family: 'Amatic SC', cursive;
+	font-size: 100px;
+	font-weight: bolder;
+}
+h2, h3, h4{
+	font-family: 'Amatic SC', cursive;
+	font-weight: bolder;
+}
+.portrait{
+	max-width: 200px;
+	height: auto;
+}
+.heading{
+	font-family: 'Amatic SC', cursive;
+	font-weight: bolder;
+	font-size: 30px;
+}
