@@ -6,3 +6,9 @@ The men of the north are strong, hardy and gruff who have only known war their e
 
 I got most of my content from the [First Law Wikia](http://firstlaw.wikia.com/wiki/First_Law_Wiki) and pictures from various other places on the interwebs. 
 
+Final observation just before turning in (it's 4:44 pm)
+
+- I feel like I learned alot about tables and databases today! 
+- I feel like I need to learn alot more about tables and databases!
+- I need to re-read the first law books
+
