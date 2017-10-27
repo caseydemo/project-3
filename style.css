@@ -28,3 +28,24 @@ h2, h3, h4{
     margin: auto;
     width: 40%;
 }
+
+.friends{
+	display: inline-block;
+	margin-left: 20px;
+	
+}
+.enemies{
+	display:inline-block;
+	margin-right: 20px;
+	
+}
+.columnl {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.columnr {
+    float: right;
+    width: 50%;
+    text-align: center;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tul Duru Thunderhead</title>
+  <title>Ishri</title>
 
   <!-- bootstrap 4 css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -24,7 +24,7 @@
       <h1>First Law-Hub</h1>
     </a>
 
-    <h2>Tul Duru Thunderhead</h3>
+    <h2>Ishri</h3>
 
 
   <?php
@@ -33,17 +33,16 @@
     echo "<td>" . $hero['quote'] . "</td>";
     echo "</tr>\n";
   }
-
-  function getFriends() {
+      function getFriends() {
     $request = pg_query(getDb(), "
-        SELECT * FROM buddies WHERE friendgroup=1;
+        SELECT * FROM buddies WHERE friendgroup=3;
     ");
     return pg_fetch_all($request);
   }
 
    function getEnemies() {
     $request = pg_query(getDb(), "
-        SELECT * FROM buddies WHERE friendgroup!=1;
+        SELECT * FROM buddies WHERE friendgroup!=3;
     ");
     return pg_fetch_all($request);
   }
@@ -88,7 +87,7 @@
     $request = pg_query(getDb(), "
         SELECT *
         FROM heroes
-        WHERE name='Tul Duru Thunderhead';
+        WHERE name='Ishri';
     ");
     return pg_fetch_all($request);
   }
@@ -119,7 +118,8 @@
 
 ?>
 
-  <div class="columnl">
+
+ <div class="columnl">
   <h3 >Friends</h3>
     <?php
 

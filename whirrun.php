@@ -103,7 +103,43 @@
 
   }
 
+
+  function getFriends() {
+    $request = pg_query(getDb(), "
+        SELECT * FROM buddies WHERE friendgroup=1;
+    ");
+    return pg_fetch_all($request);
+  }
+
+   function getEnemies() {
+    $request = pg_query(getDb(), "
+        SELECT * FROM buddies WHERE friendgroup!=1;
+    ");
+    return pg_fetch_all($request);
+  }
+
 ?>
+
+  <div class="columnl">
+  <h3 >Friends</h3>
+    <?php
+
+      foreach (getFriends() as $friend) {
+       echo "<ul>" . $friend['link'] . "</ul>";
+      }
+    ?>
+  </div>
+
+  <div class="columnr">
+  <h3>Enemies</h3>
+    <?php
+
+    foreach (getEnemies() as $enemy) {
+      echo "<ul>" . $enemy['link'] . "</ul>";
+     
+      }
+    ?>
+  </div>
 
 </table>
 

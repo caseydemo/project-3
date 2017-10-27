@@ -7,6 +7,34 @@ CREATE TABLE heroes (
     image_url VARCHAR(300),
     image_large varchar(300)
 );
+CREATE TABLE buddies (
+    id serial PRIMARY key,
+    name text UNIQUE NOT NULL,
+    link text UNIQUE NOT NULL,
+    friendGroup INTEGER NOT NULL
+);
+INSERT INTO buddies (name, link, friendGroup) VALUES ('Logan Ninefingers', '<a href="/logan.php" target="_blank"> Logan Ninefingers </a>', 1);
+INSERT INTO buddies (name, link, friendGroup) VALUES ('Black Dow', '<a href="/blackdow.php" target="_blank"> Black Dow </a>', 1);
+INSERT INTO buddies (name, link, friendGroup) VALUES ('Rudd Threetrees', '<a href="/threetrees.php" target="_blank"> Rudd Threetrees </a>', 1);
+INSERT INTO buddies (name, link, friendGroup) VALUES ('Tul Duru Thunderhead', '<a href="/thunderhead.php" target="_blank"> Tul Duru Thunderhead </a>', 1);
+INSERT INTO buddies (name, link, friendGroup) VALUES ('Whirrun of Bligh', '<a href="/whirrun.php" target="_blank"> Whirrun of Bligh </a>', 1);
+INSERT INTO buddies (name, link, friendGroup) VALUES ('Sand dan Glokta', '<a href="/glokta.php" target="_blank"> Sand dan Glokta </a>', 2);
+INSERT INTO buddies (name, link, friendGroup) VALUES ('Bayaz', '<a href="/Bayaz.php" target="_blank"> Bayaz </a>', 2);
+INSERT INTO buddies (name, link, friendGroup) VALUES ('Ishri', '<a href="/Ishri.php" target="_blank"> Ishri </a>', 3);
+
+SELECT * FROM BUDDIES;
+
+-- northmen
+SELECT * FROM buddies WHERE friendgroup=1;
+
+
+-- union
+SELECT * FROM buddies WHERE friendgroup=2;
+
+-- Ghurkish
+SELECT * FROM buddies WHERE friendgroup=3;
+
+
 
 
 INSERT INTO heroes (link, name, quote, biography, image_url, image_large) VALUES ('<a href="/logan.php" target="_blank"> Logan Ninefingers </a>', 'Logan Ninefingers', '"There are few men with more blood on their hands than me. None, that I know of. The Bloody-Nine they call me, my enemies, and there’s a lot of ’em."', 'Logen Ninefingers is an expert warrior, adept in both calculated tactics and acting instinctively in a fight; he''s arguably the deadliest fighter in the series. Crummock-i-Phail calls him "the king of killers." He generally uses a sword in battle, and also carries an abundance of daggers. However, he claims to be proficient with many different weapons, as a champion never knows what he might be called on to fight with in a duel in the circle. Despite most people outside The North considering him a dim-witted savage, he’s surprisingly thoughtful and has a bit of a philosophical side. He comes across as a pretty decent guy, a man of integrity who killed only when had to when he was under Bethod. In truth, he wasn''t. As a younger man he relished fighting and bloodshed and the feared respect it earned him. When cornered in a fight, he descends into a berserker rage and becomes The Bloody Nine, which is why most of the North fears and hates him. It is unclear if his berserker persona is demonic/spiritual possession or a split personality. He seems to have no conscious control when he becomes The Bloody Nine, killing ally and enemy alike, and often doesn''t remember these episodes. Haunted by his past, he hopes to become a better man, though he often finds himself getting drawn into bloody confrontations. But, can he really escape his past? There''s a part of him that doesn''t want to escape violence, that finds protection from scores against him through the fear he creates.', '<img class="portrait" src="https://pbs.twimg.com/profile_images/664889963180384256/MrRvjPqk.jpg">', '<img class="image_large" src="https://pre00.deviantart.net/eeb7/th/pre/f/2013/066/4/7/nine_fingers_by_vassdeviant-d5xb7n0.jpg">');
@@ -24,10 +52,19 @@ INSERT INTO heroes (link, name, quote, biography, image_url, image_large) VALUES
 INSERT INTO heroes (link, name, quote, biography, image_url, image_large) VALUES ('<a href="/Bayaz.php" target="_blank"> Bayaz </a>', 'Bayaz', '"Say one thing for the First of the Magi, say he’s a cheating bastard. "', 'Long ago in the Old Time, Juvens took Bayaz as his first apprentice, and trained him in the principles of the High Art. But soon after, his master took another, a boy from Kanta called Khalul. From the beginning they argued, too proud and jealous of one another, even as Juvens took more apprentices; twelve in all - the Order of the Magi. After the horror of the war with Glustrod, Juvens interceded in the feud between Bayaz and Khalul, lest they kill each other. He sent them away to the great libraries he had built; Bayaz to the north and Khalul to the south. Juvens hoped it would cool their tempers, but it only made it worse and they each plotted revenge. Desperate for more power, Bayaz sought another master — Juvens'' brother Kanedias.', '<img class="portrait" src="https://vignette.wikia.nocookie.net/firstlaw/images/b/be/First_of_the_magi_at_tea_by_ccs1989-d47xvvy.jpg/revision/latest/scale-to-width-down/355?cb=20150316072535">', '<img src="https://vignette.wikia.nocookie.net/firstlaw/images/e/e5/4-bayaz-small.jpg/revision/latest?cb=20160404201543">');
 
 
-INSERT INTO heroes (link, name, quote, biography, image_url, image_large) VALUES ('<a href="/glokta.php" target="_blank"> Sand dan Glokta </a>', 'Sand dan Glokta', '" "', '', '<img class="portrait" src="">', '<img src="">');
+INSERT INTO heroes (link, name, quote, biography, image_url, image_large) VALUES ('<a href="/Ishri.php" target="_blank"> Ishri </a>', 'Ishri', '" All I need now is for that vanishing devil Ishri to spring out of my horse’s arse and give me my death of shock "', 'Ishri, also known as The East Wind, is a powerful Gurkish Eater, and one of the more dangerous of the disciples of the Magus Khalul. She works widely throughout Styria and The North against factions supported by Bayaz. Ishri is a tall dark-skinned woman with perfect white teeth and black eyes. She moves with an improbably nimbleness, and dresses her impossibly thin body in white bandages from neck to toe, often covered in a long coat. She delights in surprising and provoking people.', '<img class="portrait" src="https://vignette.wikia.nocookie.net/firstlaw/images/9/92/Ishri_by_erkahoth-d8d3c31.jpg/revision/latest?cb=20160514181255">', '<img src="https://vignette.wikia.nocookie.net/firstlaw/images/1/18/Ishri_by_drreginaldfunk-d74hv3h.jpg/revision/latest?cb=20150630184228">');
 
 
-INSERT INTO heroes (link, name, quote, biography, image_url, image_large) VALUES ('<a href="/glokta.php" target="_blank"> Sand dan Glokta </a>', 'Sand dan Glokta', '" "', '', '<img class="portrait" src="">', '<img src="">');
+INSERT INTO heroes (link, name, quote, biography, image_url, image_large) VALUES ('<a href="/glokta.php" target="_blank"> Sand dan Glokta </a>', 'Sand dan Glokta', '"All I need now is for that vanishing devil Ishri to spring out of my horse’s arse and give me my death of shock "', 'Ishri, also known as The East Wind, is a powerful Gurkish Eater, and one of the more dangerous of the disciples of the Magus Khalul. She works widely throughout Styria and The North against factions supported by Bayaz. Ishri is a tall dark-skinned woman with perfect white teeth and black eyes. She moves with an improbably nimbleness, and dresses her impossibly thin body in white bandages from neck to toe, often covered in a long coat. She delights in surprising and provoking people.', '<img class="portrait" src="">', '<img src="https://vignette.wikia.nocookie.net/firstlaw/images/1/18/Ishri_by_drreginaldfunk-d74hv3h.jpg/revision/latest?cb=20150630184228">');
+
+
+CREATE TABLE buddies (
+    id serial PRIMARY key,
+    name VARCHAR(50)
+);
+
+
+
 
 
 CREATE TABLE relationship_types (
